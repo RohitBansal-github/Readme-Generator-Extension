@@ -1,6 +1,6 @@
 # GitHub README Generator 🚀
 
-[![Project Overview](placeholder.png)](placeholder.png)  <!-- Replace placeholder.png with an actual image -->
+[![Project Overview](projectOverview..png)](projectOverview.png)  <!-- Replace placeholder.png with an actual image -->
 
 ## 📖 Description
 
@@ -85,8 +85,8 @@ github-readme-generator/
 
 | Image                     | Description                                                              |
 |--------------------------|--------------------------------------------------------------------------|
-| [Screenshot 1](placeholder.png) | Extension popup with API key input                                      |
-| [Screenshot 2](placeholder.png) | Extension popup displaying generated README                                |
+| [Screenshot 1](Screenshot_1.png) | Extension popup with API key input                                      |
+| [Screenshot 2](Screenshot_2.png) | Extension popup displaying generated README                                |
 <!-- Replace placeholder.png with actual screenshots -->
 
 
