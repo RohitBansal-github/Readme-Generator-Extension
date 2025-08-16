@@ -1,6 +1,6 @@
 # GitHub README Generator 🚀
 
-[![Project Overview](projectOverview..png)]  <!-- Replace placeholder.png with an actual image -->
+[![Project Overview]](projectOverview..png)  <!-- Replace placeholder.png with an actual image -->
 
 ## 📖 Description
 
