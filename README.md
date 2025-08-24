@@ -73,9 +73,9 @@ The project is structured as a Chrome extension with the following key files and
 
 | Image                      | Description                                                                        |
 |---------------------------|------------------------------------------------------------------------------------|
-| ![Screenshot 1](placeholder_image.png) | Extension popup showing the input fields and generated README                     |
-| ![Screenshot 2](placeholder_image.png) | Example of the generated README file displayed within the extension           |
-| ![Screenshot 3](placeholder_image.png)  | Example of a downloaded README.md file                                    |
+| ![Screenshot 1](popup.png) | Extension popup showing the input fields and generated README                     |
+| ![Screenshot 2](generated.png) | Example of the generated README file displayed within the extension           |
+| ![Screenshot 3](downloaded.png)  | Example of a downloaded README.md file                                    |
 
 
 
