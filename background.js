@@ -135,37 +135,49 @@ You are a professional technical writer. Your task is to generate a complete, be
 
 🎯 **Goals:**
 - Make it beginner-friendly and informative.
-- Add relevant **emojis/icons** (e.g., 🛠️, 📦, 📁, 🔧, 📝, 📄, 📂, ⚙️, 💡, 📌, 📞, 🔗) in section titles and where useful.
 - Use **Markdown tables**, bullet points, and formatting for better clarity.
 - If both frontend and backend folders are found, assume it's a **full-stack** project.
 - If APIs, Swagger/OpenAPI files are found, add an **API Documentation** section.
 
 📄 **README Sections to Include:**
 
-1. 🏷️ **Project Title**
+1. **Project Title**
    - A concise, meaningful title with a relevant emoji/icon.
    - space for project overview image telling that replace with original.
+   -ex: ![Project Overview](placeholder_image.png). add comment *(Replace placeholder_image.png with an actual image)*
 
-2. 📖 **Description**
+2. **Description**
    - Short paragraph describing the project.
    - Mention its purpose and target users.
 
-3. 🧭 **Table of Contents**
-   - should be Auto-generate clickable markdown links for each section.
-   -should be clickable and scrollable.
+3. ## Table of Contents
+- [Project Title](#project-title)
+- [Description](#description)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Setup Instructions](#setup-instructions)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Examples](#examples)
+- [API Documentation](#api-documentation)
+- [Contributing](#contributing)
+- [Contact Info](#contact-info)
 
-4. 🌟 **Features** in a list format.
+Ensure all sections have corresponding clickable links and follow GitHub Markdown anchor rules (lowercase, hyphenated).
 
-5. 🧰 **Technologies Used**
+4. **Features** in a list format.
+
+5. **Technologies Used**
    - List all tools/libraries/languages (backend, frontend, database, auth, etc.).
    - Use technology small icon/logo next to technology name representing the exact tech the size of icon and name should be same.
    -use list format not table.
    -dont use the icon if not available.
 
-6. 📁 **Project Structure**
+6.  **Project Structure**
    - explanation of folder layout and key files in the project with proper directory format.
 
-7. ⚙️ **Setup Instructions**
+7. **Setup Instructions**
    - How to:
      - Clone the repo
      - Install dependencies
@@ -173,28 +185,28 @@ You are a professional technical writer. Your task is to generate a complete, be
      - Run backend and frontend
      - Use Docker if available
 
-8. ▶️ **Usage**
+8.  **Usage**
    - How to run or test the project
    - Include CLI or browser examples
 
-9. 🖼️ **Screenshots**
+9.  **Screenshots**
    - Add sample screenshots (with Markdown image syntax and short description).
    -| image | description |
    -telling that replace with original
 
-10. 🧪 **Examples**
+10.  **Examples**
    - Sample API requests or CLI commands (include curl/postman/json if found).
 
-11. 📚 **API Documentation**
+11.  **API Documentation**
   //  - If APIs are detected:
      - Create a table listing:
        | Method | Endpoint | Description | Parameters |
        |--------|----------|-------------|------------|
 
-12. 🤝 **Contributing**
+12.  **Contributing**
    - Guidelines for external contributors.
 
-13. 📞 **Contact Info**
+13.  **Contact Info**
    - Placeholder support or contact details.
 
 ---
@@ -217,7 +229,9 @@ ${repoContent}
   ];
 
   const payload = { contents: chatHistory };
-  const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiApiKey}`;
+const MODEL = "gemini-2.5-flash";  // or gemini-2.5-pro
+const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${geminiApiKey}`;
+
   const headers = { 'Content-Type': 'application/json' };
 
   const result = await callLlmApiWithRetry(apiUrl, payload, headers, "Gemini");
